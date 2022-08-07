@@ -28,7 +28,8 @@ class GetApiController {
         println("${name},${age}")
         return name+","+age
     }
-
+    
+    //Path-Variable 처리방법
     @GetMapping("/get-mapping/path-variable2/{name}/{age}")
     fun pathVariable2(@PathVariable(value = "name")_name : String,@PathVariable age: Int ): String {
         val name = "kotlin"
